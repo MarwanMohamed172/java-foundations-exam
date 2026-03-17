@@ -95,7 +95,7 @@ public class Employee {
     }
 
 
-    // TODO: getBonus() — returns 5% of salary
+    //TODO: getBonus() — returns 5% of salary
     public double getBonus() {
         return salary * 0.05;
     }

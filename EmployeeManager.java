@@ -149,7 +149,7 @@ public class EmployeeManager {
         removeEmployee(id);
         // add new manager
         addEmployee(newManager);
-        // return the new manager
+        //return the new manager
         return newManager;
     }
 }
