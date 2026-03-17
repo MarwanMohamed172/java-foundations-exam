@@ -79,7 +79,7 @@ public class Main {
             System.out.println("Error: " + e.getMessage());
         }
 
-        // create an employee with negative salary
+        //create an employee with negative salary
         try {
             Employee emp5 = new Employee(7, "Abdallah", "HR", -1000.0);
         } catch (IllegalArgumentException e) {
