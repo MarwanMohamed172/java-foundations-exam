@@ -152,4 +152,18 @@ public class EmployeeManager {
         //return the new manager
         return newManager;
     }
+
+    // 6.	Add a method exportAllToCSV() to EmployeeManager that loops through all employees and returns one big string with each CSV line separated by a newline
+
+    public String exportAllToCSV() {
+        // initalizing a StringBuilder
+        StringBuilder sb = new StringBuilder();
+        // looping through all employees
+        for(Employee emp : employees) {
+            // appending to stringbuilder with newline
+            sb.append(emp.toCSV()).append("\n");
+        }
+        // returning the built string
+        return sb.toString();
+    }
 }

@@ -12,7 +12,7 @@
  *      "Employee{id=1, name='Ahmed', department='Engineering', salary=3500.0}"
  *   5. Add a getBonus() method that returns 5% of salary (salary * 0.05)
  */
-public class Employee {
+public class Employee implements Exportable {
 
     protected int id;
     protected String name;
@@ -98,5 +98,11 @@ public class Employee {
     //TODO: getBonus() — returns 5% of salary
     public double getBonus() {
         return salary * 0.05;
+    }
+
+    // toCSV method implementation from interface
+    @Override
+    public String toCSV(){
+        return id + "," + name + "," + department + "," + salary; 
     }
 }

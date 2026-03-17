@@ -53,4 +53,10 @@ public class Manager extends Employee {
         return salary * 0.15;
     }
 
+    // appending to include teamSize in CSV export
+    @Override
+    public String toCSV() {
+        return id + "," + name + "," + department + "," + salary + "," + teamSize;
+    }
+
 }

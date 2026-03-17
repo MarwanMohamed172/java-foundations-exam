@@ -52,5 +52,11 @@ public class Intern extends Employee {
     public double getBonus() {
         return 0;
     }
+
+    // appending to include unversity
+    @Override
+    public String toCSV() {
+        return id + "," + name + "," + department + "," + salary + "," + university;
+    }
     
 }
